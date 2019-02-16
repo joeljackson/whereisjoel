@@ -12,6 +12,8 @@ tags:
 description: "In the last half decade the world of software has changed. My thoughts on where Ruby fits moving into the 2020s."
 ---
 
+**TLDR;** If you like Rails, use it.
+
 I started a new project this week. Pretty much greenfield. Very little code in place. Immense task in front of us. Toolset to choose. As it has over the last decade the first thing that came to mind was Ruby on Rails.
 
 All the developers I know have been talking for the last 4 years about how Ruby is dying. I often hear quotes like "Starting a project in Rails now is like starting a project in COBOL in 2004", or "No one uses Rails anymore, learn something new." Given the ecosystem I thought it may be a good time to take a long hard look at where Ruby is now, and whether it really is the right choice to scale a company.
