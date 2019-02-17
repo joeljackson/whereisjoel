@@ -18,15 +18,12 @@ module.exports = {
         label: 'About me',
         path: '/about/',
       },
-      {
-        label: 'Contact me',
-        path: '/contact/',
-      },
     ],
     author: {
       name: 'Joel Jackson',
       email: 'jackson.joel@gmail.com',
       github: 'https://github.com/joeljackson/',
+      linkedin: 'https://www.linkedin.com/in/joel-jackson-95321212/'
     },
   },
   plugins: [
