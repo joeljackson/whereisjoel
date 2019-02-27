@@ -3,7 +3,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import Sidebar from '../components/Sidebar'
+import Topbar from '../components/Topbar'
 
 class CategoriesRoute extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class CategoriesRoute extends React.Component {
       <Layout>
         <div>
           <Helmet title={`All Categories - ${title}`} />
-          <Sidebar {...this.props} />
+          <Topbar {...this.props} />
           <div className="content">
             <div className="content__inner">
               <div className="page">
