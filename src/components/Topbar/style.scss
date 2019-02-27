@@ -4,6 +4,7 @@
 .topbar {
   padding-top: 10px;
   padding-left: 10px;
+  border-bottom: 1px $color-gray solid;
   &__author {
     &-photo-container {
       display: none;
@@ -30,6 +31,7 @@
     &-subtitle {
       color: $color-gray;
       margin-top: 1em;
+      margin-bottom: 1em;
     }
   }
 }

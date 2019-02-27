@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
-import Sidebar from '../components/Sidebar'
 import Topbar from '../components/Topbar'
 
 class IndexRoute extends React.Component {

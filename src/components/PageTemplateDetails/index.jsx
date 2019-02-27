@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../Sidebar'
+import Topbar from '../Topbar'
 import './style.scss'
 
 class PageTemplateDetails extends React.Component {
@@ -8,7 +8,7 @@ class PageTemplateDetails extends React.Component {
 
     return (
       <div>
-        <Sidebar {...this.props} />
+        <Topbar {...this.props} />
         <div className="content">
           <div className="content__inner">
             <div className="page">
