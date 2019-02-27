@@ -2,14 +2,17 @@
 @import "../../assets/scss/mixins";
 
 .menu {
-    @include margin-bottom(1);
+    lost-column: 7/12;
     &__list {
+        lost-column: 12/12;
         list-style: none;
         padding: 0;
         margin: 0;
         &-item {
+            float: left;
             padding: 0;
-            margin: 10px 0;
+            padding-right: 40px;
+            margin-bottom: 0;
             &-link {
                 font-size: $typographic-base-font-size;
                 color: $typographic-base-font-color;

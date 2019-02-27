@@ -6,7 +6,7 @@ module.exports = {
     url: 'https://www.whereisjoel.com',
     title: 'Where is Joel',
     subtitle:
-      'My thoughts. Primarily on building software, living a healthy life and the environment.',
+      'On building software, living a healthy life and the world around us.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [

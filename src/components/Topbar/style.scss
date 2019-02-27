@@ -1,0 +1,49 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.topbar {
+  padding-top: 10px;
+  padding-left: 10px;
+  &__author {
+    &-photo-container {
+      display: none;
+    }
+
+    &-photo {
+      border-radius: 50%;
+    }
+
+    &-title {
+      lost-column: 12/12;
+      font-weight: 500;
+
+      &-link {
+        color: $color-base;
+
+        &:hover,
+        &:focus {
+          color: $color-base;
+        }
+      }
+    }
+
+    &-subtitle {
+      color: $color-gray;
+      margin-top: 1em;
+    }
+  }
+}
+
+@include breakpoint-sm {
+  .topbar {
+    &__author {
+      &-photo-container {
+        display: block;
+        lost-column: 1/12;
+      }
+      &-title {
+        lost-column: 2/12;
+      }
+    }
+  }
+}

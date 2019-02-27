@@ -2,43 +2,43 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Menu from '../Menu'
 import profilePic from '../../pages/photo.jpg'
+import './style.scss'
 
 class Topbar extends React.Component {
   render() {
-    const { location } = this.props
     const {
-      author,
+      title,
       subtitle,
-      copyright,
       menu,
     } = this.props.data.site.siteMetadata
 
     const authorBlock = (
       <div>
-        <Link to="/">
+        <Link className="topbar__author-photo-container" to="/">
           <img
             src={profilePic}
             className="topbar__author-photo"
-            width="75"
-            height="75"
-            alt={author.name}
+            width="25"
+            height="25"
+            alt={title}
           />
         </Link>
-        <h1 className="sidebar__author-title">
-          <Link className="sidebar__author-title-link" to="/">
-            {author.name}
+        <span className="topbar__author-title">
+          <Link className="topbar__author-title-link" to="/">
+            {title}
           </Link>
-        </h1>
-        <p className="sidebar__author-subtitle">{subtitle}</p>
+        </span>
       </div>
     )
 
     return (
       <div className="topbar">
-        <div>
-          <Menu data={menu} />
+        <div className="row">
           <div className="topbar__author">{authorBlock}</div>
-          <p className="topbar__copyright">{copyright}</p>
+          <Menu data={menu} />
+        </div>
+        <div className="topbar__description">
+          <p className="topbar__author-subtitle">{subtitle}</p>
         </div>
       </div>
     )
