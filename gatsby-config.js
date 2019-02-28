@@ -3,16 +3,20 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
+    url: 'https://www.whereisjoel.com',
     title: 'Where is Joel',
     subtitle:
-      'My thoughts. Primarily on building software, living a healthy life and the environment.',
+      'On building software, living a healthy life and the world around us.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
       {
         label: 'Articles',
         path: '/',
+      },
+      {
+        label: 'On Building Software',
+        path: '/on-building-software'
       },
       {
         label: 'About me',
