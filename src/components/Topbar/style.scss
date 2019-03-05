@@ -2,36 +2,36 @@
 @import "../../assets/scss/mixins";
 
 .topbar {
+  lost-flex-container: row;
   padding-top: 10px;
   padding-left: 10px;
   border-bottom: 1px $color-gray solid;
   &__author {
-    &-photo-container {
-      display: none;
-    }
-
+    display: none;
     &-photo {
       border-radius: 50%;
     }
-
+   }
+  &__menu {
+    lost-column: 12/12;
+    lost-flex-container: row;
     &-title {
       lost-column: 12/12;
       font-weight: 500;
-
       &-link {
         color: $color-base;
-
+      
         &:hover,
         &:focus {
           color: $color-base;
         }
       }
     }
-
-    &-subtitle {
+    &-manu {
+      lost-column: 12/12;
+    }
+    &-description {
       color: $color-gray;
-      margin-top: 1em;
-      margin-bottom: 1em;
     }
   }
 }
@@ -39,12 +39,19 @@
 @include breakpoint-sm {
   .topbar {
     &__author {
-      &-photo-container {
-        display: block;
-        lost-column: 1/12;
-      }
+      display: block;
+      lost-column: 1/12;
+    }
+    &__menu {
+      lost-column: 10/12;
       &-title {
         lost-column: 2/12;
+      }
+      &-menu {
+        lost-column: 10/12;
+      }
+      &-description {
+        lost-column: 12/12;
       }
     }
   }

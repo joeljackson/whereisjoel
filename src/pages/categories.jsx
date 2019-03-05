@@ -12,7 +12,7 @@ class CategoriesRoute extends React.Component {
 
     return (
       <Layout>
-        <div>
+        <div className="page">
           <Helmet title={`All Categories - ${title}`} />
           <Topbar {...this.props} />
           <div className="content">
