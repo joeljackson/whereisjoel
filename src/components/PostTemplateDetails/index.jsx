@@ -43,7 +43,7 @@ class PostTemplateDetails extends React.Component {
     )
 
     return (
-      <div>
+      <div className="page">
         {homeBlock}
         <div className="post-single">
           <div className="post-single__inner">

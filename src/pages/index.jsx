@@ -16,7 +16,7 @@ class IndexRoute extends React.Component {
 
     return (
       <Layout>
-        <div>
+        <div className="page">
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
