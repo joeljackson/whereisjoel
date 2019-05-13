@@ -9671,7 +9671,7 @@ netlify-cms-widget-text@^2.2.2:
   dependencies:
     react-textarea-autosize "^7.1.0"
 
-netlify-cms@^2.6.1:
+netlify-cms@^2.9.1:
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-2.9.1.tgz#11e82b0ee74ea69bf7d80b702df94426a606c976"
   integrity sha512-NYdpSZo4jUs0nRlsA3aqneZrCYaeU+S4hs2v7uZdcnKhTKkoTP20A7NdPbmqtVKAkr/sJUS/D7iExiQ5znWOZg==
