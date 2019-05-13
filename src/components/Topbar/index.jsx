@@ -12,33 +12,29 @@ class Topbar extends React.Component {
       menu,
     } = this.props.data.site.siteMetadata
 
-    const authorBlock = (
-      <div>
-        <Link className="topbar__author-photo-container" to="/">
-          <img
-            src={profilePic}
-            className="topbar__author-photo"
-            width="25"
-            height="25"
-            alt={title}
-          />
-        </Link>
-        <span className="topbar__author-title">
-          <Link className="topbar__author-title-link" to="/">
-            {title}
-          </Link>
-        </span>
-      </div>
-    )
-
     return (
       <div className="topbar">
-        <div className="row">
-          <div className="topbar__author">{authorBlock}</div>
-          <Menu data={menu} />
+        <div className="topbar__author">
+          <Link to="/">
+            <img
+              src={profilePic}
+              className="topbar__author-photo"
+              width="50"
+              height="50"
+              alt={title}
+            />
+          </Link>
         </div>
-        <div className="topbar__description">
-          <p className="topbar__author-subtitle">{subtitle}</p>
+        <div className="topbar__menu">
+          <div className="topbar__menu-title">
+            <Link className="topbar__menu-title-link" to="/">
+              {title}
+            </Link>
+          </div>
+          <Menu className="menu" data={menu} />
+          <div className="topbar__menu-description">
+            <span className="topbar__menu-description-subtitle">{subtitle}</span>
+          </div>
         </div>
       </div>
     )
