@@ -8,7 +8,6 @@ category: Health Optimization
 tags:
   - "Health Optimization"
   - "Biohacking"
-  - Rails
 description: "Sounds nefarious. What is Biohacking and why should you care?"
 ---
 TLDR; Biohacking is using data to empower people to take control of their own wellness.
