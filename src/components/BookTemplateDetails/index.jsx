@@ -11,8 +11,12 @@ class BookTemplateDetails extends React.Component {
   }
 
   sectionsForChapter(chapter, sections) {
-    sections.edges.filter(section => {
-      return section.node.frontmatter.chapter === chapter
+    const sectionNodes = sections.edges.map( section => {
+      return section.node;
+    })
+
+    return sectionNodes.filter(section => {
+      return section.frontmatter.chapter === chapter
     })
   }
 

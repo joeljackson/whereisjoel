@@ -1,6 +1,6 @@
 ---
 title: On The Importance Of Hiring
-chapter: hiring
+chapter: On Hiring
 layout: "section"
 ---
 

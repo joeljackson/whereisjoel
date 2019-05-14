@@ -1,6 +1,6 @@
 ---
 title: On The Difficulty Of Hiring
-chapter: hiring
+chapter: On Hiring
 layout: "section"
 ---
 
