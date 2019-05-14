@@ -66,7 +66,7 @@ It's the process of using measurement, plan creation and re-measurement to achie
 2. Set up a plan (Picked a diet)
 3. Followed the plan and re-measured
 
-![What is Biohacking?](./Biohacking.png)
+![What is Biohacking?](/images/uploads/Biohacking.png)
 
 What if you continuously applied this process across all of your health, not just your weight? Kept tabs all the time, not just for the 4-5 weeks you're on your weight loss plan? That's biohacking.
 
