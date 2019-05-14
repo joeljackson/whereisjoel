@@ -1,10 +1,25 @@
 import React from 'react'
 import Topbar from '../Topbar'
-//import './style.scss'
+import Chapter from '../Chapter'
+// import './style.scss'
 
 class BookTemplateDetails extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.sectionsForChapter = this.sectionsForChapter.bind(this);
+  }
+
+  sectionsForChapter(chapter, sections) {
+    sections.edges.filter(section => {
+      return section.node.frontmatter.chapter === chapter
+    })
+  }
+
   render() {
     const page = this.props.data.markdownRemark
+    const sections = this.props.data.allMarkdownRemark
+    const chapters = page.frontmatter.chapters
 
     return (
       <div className="page">
@@ -21,6 +36,13 @@ class BookTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
+        {chapters.map(chapter => {
+          return (<Chapter
+            key={chapter.name}
+            chapter={chapter}
+            sections={this.sectionsForChapter(chapter, sections)}
+          />)
+        })}
       </div>
     )
   }

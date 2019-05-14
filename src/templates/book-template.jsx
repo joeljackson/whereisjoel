@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import BookTemplateDetails from '../components/BookTemplateDetails'
 
-class CategoryTemplate extends React.Component {
+class BookTemplate extends React.Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
     const page = this.props.data.markdownRemark
@@ -25,7 +25,7 @@ class CategoryTemplate extends React.Component {
   }
 }
 
-export default CategoryTemplate
+export default BookTemplate
 
 export const pageQuery = graphql`
   query BookBySlug($slug: String!) {
@@ -50,7 +50,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        description
+        chapters
       }
     }
     allMarkdownRemark(filter: { frontmatter:  { layout: { eq:"section"}}}) {
