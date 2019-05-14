@@ -40,13 +40,15 @@ class BookTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
-        {chapters.map(chapter => {
-          return (<Chapter
-            key={chapter.name}
-            chapter={chapter}
-            sections={this.sectionsForChapter(chapter, sections)}
-          />)
-        })}
+        <div class="d-none">
+          {chapters.map(chapter => {
+            return (<Chapter
+              key={chapter.name}
+              chapter={chapter}
+              sections={this.sectionsForChapter(chapter, sections)}
+            />)
+          })}
+        </div>
       </div>
     )
   }
