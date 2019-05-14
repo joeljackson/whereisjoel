@@ -10,6 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
     const postTemplate = path.resolve('./src/templates/post-template.jsx')
     const pageTemplate = path.resolve('./src/templates/page-template.jsx')
     const tagTemplate = path.resolve('./src/templates/tag-template.jsx')
+    const bookTemplate = path.resolve('./src/templates/book-template.jsx')
     const categoryTemplate = path.resolve(
       './src/templates/category-template.jsx'
     )
@@ -47,6 +48,12 @@ exports.createPages = ({ graphql, actions }) => {
             component: slash(pageTemplate),
             context: { slug: edge.node.fields.slug },
           })
+        } else if (_.get(edge, 'node.frontmatter.layout') === 'book') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(bookTemplate),
+            context: { slug: edge.node.fields.slug },
+          })        
         } else if (_.get(edge, 'node.frontmatter.layout') === 'post') {
           createPage({
             path: edge.node.fields.slug,
