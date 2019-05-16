@@ -53,7 +53,7 @@ export const pageQuery = graphql`
         chapters
       }
     }
-    allMarkdownRemark(filter: { frontmatter:  { layout: { eq:"section"}}}) {
+    allMarkdownRemark(filter: { frontmatter: { layout: { eq: "section" } } }) {
       edges {
         node {
           frontmatter {
