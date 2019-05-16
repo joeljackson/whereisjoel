@@ -6,11 +6,7 @@ import './style.scss'
 
 class Topbar extends React.Component {
   render() {
-    const {
-      title,
-      subtitle,
-      menu,
-    } = this.props.data.site.siteMetadata
+    const { title, subtitle, menu } = this.props.data.site.siteMetadata
 
     return (
       <div className="topbar">
@@ -33,7 +29,9 @@ class Topbar extends React.Component {
           </div>
           <Menu className="menu" data={menu} />
           <div className="topbar__menu-description">
-            <span className="topbar__menu-description-subtitle">{subtitle}</span>
+            <span className="topbar__menu-description-subtitle">
+              {subtitle}
+            </span>
           </div>
         </div>
       </div>
@@ -41,4 +39,4 @@ class Topbar extends React.Component {
   }
 }
 
-export default Topbar;
+export default Topbar

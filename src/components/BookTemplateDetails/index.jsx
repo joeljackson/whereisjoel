@@ -1,18 +1,17 @@
 import React from 'react'
 import Topbar from '../Topbar'
 import Chapter from '../Chapter'
-// import './style.scss'
 
 class BookTemplateDetails extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.sectionsForChapter = this.sectionsForChapter.bind(this);
+    this.sectionsForChapter = this.sectionsForChapter.bind(this)
   }
 
   sectionsForChapter(chapter, sections) {
-    const sectionNodes = sections.edges.map( section => {
-      return section.node;
+    const sectionNodes = sections.edges.map(section => {
+      return section.node
     })
 
     return sectionNodes.filter(section => {
@@ -40,13 +39,15 @@ class BookTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
-        <div class="d-none">
+        <div>
           {chapters.map(chapter => {
-            return (<Chapter
-              key={chapter.name}
-              chapter={chapter}
-              sections={this.sectionsForChapter(chapter, sections)}
-            />)
+            return (
+              <Chapter
+                key={chapter.name}
+                chapter={chapter}
+                sections={this.sectionsForChapter(chapter, sections)}
+              />
+            )
           })}
         </div>
       </div>

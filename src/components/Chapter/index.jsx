@@ -18,7 +18,7 @@ class Chapter extends React.Component {
                 dangerouslySetInnerHTML={{ __html: section.html }}
               />
             </div>
-          );
+          )
         })}
       </div>
     )
