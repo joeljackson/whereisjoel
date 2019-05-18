@@ -22,6 +22,7 @@ class Chapter extends React.Component {
           return (
             <div key={section.frontmatter.title}>
               <a name={this.attributeName(section.frontmatter.title)} />
+
               <h2>{section.frontmatter.title}</h2>
               <div
                 className="page__body"
