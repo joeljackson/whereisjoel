@@ -10,12 +10,17 @@
 
     &-book {
       lost-flex-container: row;
+      flex-direction: row-reverse;
 
       &-content {
         lost-column: 9/12;
       }
 
       &-nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 5%;
+        height: 100%;
         lost-column: 3/12;
       }
     }

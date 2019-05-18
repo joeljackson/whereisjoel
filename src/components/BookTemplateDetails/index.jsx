@@ -40,10 +40,11 @@ class BookTemplateDetails extends React.Component {
                   dangerouslySetInnerHTML={{ __html: page.html }}
                 />
                 <div className="page__body-book">
-                  <div class="page__body-book-content">
+                  <div class="page__body-book-nav">
+                    <h2>Contents</h2>
                     {chapters.map(chapter => {
                       return (
-                        <Chapter
+                        <ChapterHeader
                           key={chapter.name}
                           chapter={chapter}
                           sections={this.sectionsForChapter(chapter, sections)}
@@ -51,10 +52,10 @@ class BookTemplateDetails extends React.Component {
                       )
                     })}
                   </div>
-                  <div class="page__body-book-nav">
+                  <div class="page__body-book-content">
                     {chapters.map(chapter => {
                       return (
-                        <ChapterHeader
+                        <Chapter
                           key={chapter.name}
                           chapter={chapter}
                           sections={this.sectionsForChapter(chapter, sections)}
