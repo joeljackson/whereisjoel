@@ -7,7 +7,7 @@ class Chapter extends React.Component {
 
     return (
       <div>
-        <h2>{name}</h2>
+        <h1>{name}</h1>
         {sections.map(section => {
           return (
             <div key={section.frontmatter.title}>
