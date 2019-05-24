@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.scss'
 
 class ChapterHeader extends React.Component {
   constructor(props) {
@@ -14,10 +15,11 @@ class ChapterHeader extends React.Component {
   render() {
     const name = this.props.chapter
     const sections = this.props.sections
+    const boldClass = this.props.isBold ? 'Bold' : ''
 
     return (
       <nav>
-        <h3>{name}</h3>
+        <h3 className={boldClass}>{name}</h3>
         {sections.map(section => {
           return (
             <h4>
