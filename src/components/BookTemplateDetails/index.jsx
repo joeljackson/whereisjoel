@@ -2,6 +2,7 @@ import React from 'react'
 import Topbar from '../Topbar'
 import Chapter from '../Chapter'
 import ChapterHeader from '../ChapterHeader'
+import { withScroll } from 'react-window-decorators'
 import './style.scss'
 
 class BookTemplateDetails extends React.Component {
@@ -9,6 +10,12 @@ class BookTemplateDetails extends React.Component {
     super(props)
 
     this.sectionsForChapter = this.sectionsForChapter.bind(this)
+    this.setSectionPosition = this.setSectionPosition.bind(this)
+
+    this.state = {
+      chapterPositions: {},
+      scrollPositionY: 0,
+    }
   }
 
   sectionsForChapter(chapter, sections) {
@@ -19,6 +26,18 @@ class BookTemplateDetails extends React.Component {
     return sectionNodes.filter(section => {
       return section.frontmatter.chapter === chapter
     })
+  }
+
+  componentDidMount() {
+    window.addEventListener('window-scroll', event => {
+      this.state.scrollPositionY = event.detail.scrollPositionY
+    })
+  }
+
+  setSectionPosition(sectionName, position) {
+    this.state.chapterPositions[sectionName] = position
+
+    this.setState(this.state)
   }
 
   render() {
@@ -40,7 +59,7 @@ class BookTemplateDetails extends React.Component {
                   dangerouslySetInnerHTML={{ __html: page.html }}
                 />
                 <div className="page__body-book">
-                  <div class="page__body-book-nav">
+                  <div className="page__body-book-nav">
                     <h2>Contents</h2>
                     {chapters.map(chapter => {
                       return (
@@ -52,13 +71,14 @@ class BookTemplateDetails extends React.Component {
                       )
                     })}
                   </div>
-                  <div class="page__body-book-content">
+                  <div className="page__body-book-content">
                     {chapters.map(chapter => {
                       return (
                         <Chapter
                           key={chapter.name}
                           chapter={chapter}
                           sections={this.sectionsForChapter(chapter, sections)}
+                          setSectionPosition={this.setSectionPosition}
                         />
                       )
                     })}
@@ -73,4 +93,4 @@ class BookTemplateDetails extends React.Component {
   }
 }
 
-export default BookTemplateDetails
+export default withScroll(BookTemplateDetails)

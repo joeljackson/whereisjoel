@@ -1,14 +1,16 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+import Section from '../Section'
 
 class Chapter extends React.Component {
   constructor(props) {
     super(props)
-
-    this.attributeName = this.attributeName.bind(this)
   }
 
-  attributeName(title) {
-    return `${title.replace(/ /gi, '-')}`
+  componentDidMount() {
+    const node = ReactDOM.findDOMNode(this)
+    this.props.setSectionPosition('Hello', 9)
+    console.log(node.offsetTop)
   }
 
   render() {
@@ -20,16 +22,7 @@ class Chapter extends React.Component {
         <h1>{name}</h1>
         {sections.map(section => {
           return (
-            <div key={section.frontmatter.title}>
-              <a name={this.attributeName(section.frontmatter.title)} />
-
-              <h2>{section.frontmatter.title}</h2>
-              <div
-                className="page__body"
-                /* eslint-disable-next-line react/no-danger */
-                dangerouslySetInnerHTML={{ __html: section.html }}
-              />
-            </div>
+            <Section title={section.frontmatter.title} html={section.html} />
           )
         })}
       </div>
