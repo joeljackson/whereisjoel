@@ -4,14 +4,25 @@
 .page {
   &__body {
 
-
+    &-header {
+      border-bottom: 1px solid grey;
+    }
 
     &-book {
       lost-flex-container: row;
       flex-direction: row-reverse;
+      padding-top: 25px;
 
       &-content {
         lost-column: 9/12;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+          margin-top: 0px;
+        }
       }
 
       &-nav {
@@ -20,6 +31,21 @@
         top: 5%;
         height: 100%;
         lost-column: 3/12;
+        margin-right: 0 !important;
+        margin-left: 30px !important;
+
+        nav {
+          padding-top: 20px;
+        }
+
+        * {
+          margin: 0;
+
+          h4 {
+            font-size: 1rem;
+            padding-left: 20px;
+          }
+        }
       }
     }
   }
