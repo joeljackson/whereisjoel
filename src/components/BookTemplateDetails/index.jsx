@@ -11,10 +11,10 @@ class BookTemplateDetails extends React.Component {
 
     this.sectionsForChapter = this.sectionsForChapter.bind(this)
     this.setSectionPosition = this.setSectionPosition.bind(this)
-    this.isBoldChapter = this.isBoldChapter.bind(this)
+    this.isBoldSection = this.isBoldSection.bind(this)
 
     this.state = {
-      chapterPositions: {},
+      sectionPositions: {},
       scrollPositionY: 0,
     }
   }
@@ -29,8 +29,8 @@ class BookTemplateDetails extends React.Component {
     })
   }
 
-  isBoldChapter(name) {
-    return this.state.scrollPositionY > this.state.chapterPositions[name]
+  isBoldSection(name) {
+    return this.state.scrollPositionY > this.state.sectionPositions[name]
   }
 
   componentDidMount() {
@@ -40,7 +40,7 @@ class BookTemplateDetails extends React.Component {
   }
 
   setSectionPosition(sectionName, position) {
-    this.state.chapterPositions[sectionName] = position
+    this.state.sectionPositions[sectionName] = position
 
     this.setState(this.state)
   }
@@ -72,7 +72,7 @@ class BookTemplateDetails extends React.Component {
                           key={chapter}
                           chapter={chapter}
                           sections={this.sectionsForChapter(chapter, sections)}
-                          isBold={this.isBoldChapter(chapter)}
+                          isBold={this.isBoldSection}
                         />
                       )
                     })}

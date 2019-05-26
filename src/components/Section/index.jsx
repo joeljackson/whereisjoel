@@ -1,10 +1,16 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
 class Section extends React.Component {
   constructor(props) {
     super(props)
 
     this.attributeName = this.attributeName.bind(this)
+  }
+
+  componentDidMount() {
+    const node = ReactDOM.findDOMNode(this)
+    this.props.setSectionPosition(this.props.title, node.offsetTop)
   }
 
   attributeName(title) {

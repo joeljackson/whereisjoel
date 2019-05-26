@@ -6,24 +6,31 @@ class ChapterHeader extends React.Component {
     super(props)
 
     this.attributeName = this.attributeName.bind(this)
+    this.boldClass = this.boldClass.bind(this)
   }
 
   attributeName(title) {
     return `#${title.replace(/ /gi, '-')}`
   }
 
+  boldClass(name) {
+    return this.props.isBold(name) ? 'Bold' : ''
+  }
+
   render() {
     const name = this.props.chapter
     const sections = this.props.sections
-    const boldClass = this.props.isBold ? 'Bold' : ''
 
     return (
       <nav>
-        <h3 className={boldClass}>{name}</h3>
+        <h3 className={this.boldClass(name)}>{name}</h3>
         {sections.map(section => {
           return (
             <h4>
-              <a href={this.attributeName(section.frontmatter.title)}>
+              <a
+                href={this.attributeName(section.frontmatter.title)}
+                className={this.boldClass(section.frontmatter.title)}
+              >
                 {section.frontmatter.title}
               </a>
             </h4>

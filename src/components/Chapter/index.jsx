@@ -21,7 +21,11 @@ class Chapter extends React.Component {
         <h1>{name}</h1>
         {sections.map(section => {
           return (
-            <Section title={section.frontmatter.title} html={section.html} />
+            <Section
+              setSectionPosition={this.props.setSectionPosition}
+              title={section.frontmatter.title}
+              html={section.html}
+            />
           )
         })}
       </div>
