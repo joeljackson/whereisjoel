@@ -9,7 +9,10 @@ class Chapter extends React.Component {
 
   componentDidMount() {
     const node = ReactDOM.findDOMNode(this)
-    this.props.setSectionPosition(this.props.chapter, node.offsetTop)
+    this.props.setSectionPosition(
+      `chapter-${this.props.chapter}`,
+      node.offsetTop
+    )
   }
 
   render() {

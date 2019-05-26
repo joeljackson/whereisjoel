@@ -23,13 +23,15 @@ class ChapterHeader extends React.Component {
 
     return (
       <nav>
-        <h3 className={this.boldClass(name)}>{name}</h3>
+        <h3 className={this.boldClass(`chapter-${name}`)}>{name}</h3>
         {sections.map(section => {
           return (
             <h4>
               <a
                 href={this.attributeName(section.frontmatter.title)}
-                className={this.boldClass(section.frontmatter.title)}
+                className={this.boldClass(
+                  `section-${section.frontmatter.title}`
+                )}
               >
                 {section.frontmatter.title}
               </a>
