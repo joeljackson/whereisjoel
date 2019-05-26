@@ -3,6 +3,7 @@ import Topbar from '../Topbar'
 import Chapter from '../Chapter'
 import ChapterHeader from '../ChapterHeader'
 import { withScroll } from 'react-window-decorators'
+import SortedArray from 'sorted-array'
 import './style.scss'
 
 class BookTemplateDetails extends React.Component {
@@ -14,7 +15,9 @@ class BookTemplateDetails extends React.Component {
     this.isBoldSection = this.isBoldSection.bind(this)
 
     this.state = {
-      sectionPositions: {},
+      sectionPositions: new SortedArray([], (elementA, elementB) => {
+        return elementA.position >= elementB.position ? 1 : -1
+      }),
       scrollPositionY: 0,
     }
   }
@@ -30,7 +33,18 @@ class BookTemplateDetails extends React.Component {
   }
 
   isBoldSection(name) {
-    return this.state.scrollPositionY > this.state.sectionPositions[name]
+    var indexOfChapter = -1
+    this.state.sectionPositions.array.every(element => {
+      if (element.position > this.state.scrollPositionY) {
+        return false
+      }
+      indexOfChapter = indexOfChapter + 1
+      return true
+    })
+
+    return (
+      name === (this.state.sectionPositions.array[indexOfChapter] || {}).name
+    )
   }
 
   componentDidMount() {
@@ -40,7 +54,10 @@ class BookTemplateDetails extends React.Component {
   }
 
   setSectionPosition(sectionName, position) {
-    this.state.sectionPositions[sectionName] = position
+    this.state.sectionPositions.insert({
+      name: sectionName,
+      position: position,
+    })
 
     this.setState(this.state)
   }

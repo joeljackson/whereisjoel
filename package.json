@@ -52,7 +52,8 @@
     "react-disqus-comments": "^1.2.0",
     "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0",
-    "react-window-decorators": "^1.0.6"
+    "react-window-decorators": "^1.0.6",
+    "sorted-array": "2.0.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
