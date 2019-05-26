@@ -12,13 +12,13 @@ class BookTemplateDetails extends React.Component {
 
     this.sectionsForChapter = this.sectionsForChapter.bind(this)
     this.setSectionPosition = this.setSectionPosition.bind(this)
-    this.isBoldSection = this.isBoldSection.bind(this)
 
     this.state = {
       sectionPositions: new SortedArray([], (elementA, elementB) => {
         return elementA.position >= elementB.position ? 1 : -1
       }),
       scrollPositionY: 0,
+      boldSectionName: '',
     }
   }
 
@@ -32,7 +32,7 @@ class BookTemplateDetails extends React.Component {
     })
   }
 
-  isBoldSection(name) {
+  findBoldSection() {
     var indexOfChapter = -1
     this.state.sectionPositions.array.every(element => {
       if (element.position > this.state.scrollPositionY) {
@@ -42,14 +42,14 @@ class BookTemplateDetails extends React.Component {
       return true
     })
 
-    return (
-      name === (this.state.sectionPositions.array[indexOfChapter] || {}).name
-    )
+    return (this.state.sectionPositions.array[indexOfChapter] || {}).name
   }
 
   componentDidMount() {
     window.addEventListener('window-scroll', event => {
       this.state.scrollPositionY = event.detail.scrollPositionY
+      this.state.boldSectionName = this.findBoldSection()
+      this.setState(this.state)
     })
   }
 
@@ -89,7 +89,7 @@ class BookTemplateDetails extends React.Component {
                           key={chapter}
                           chapter={chapter}
                           sections={this.sectionsForChapter(chapter, sections)}
-                          isBold={this.isBoldSection}
+                          boldSectionName={this.state.boldSectionName}
                         />
                       )
                     })}
