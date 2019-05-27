@@ -14,7 +14,6 @@
       padding-top: 25px;
 
       &-content {
-        lost-column: 9/12;
 
         h1,
         h2,
@@ -25,25 +24,43 @@
         }
       }
 
-      &-nav {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 5%;
-        height: 100%;
-        lost-column: 3/12;
-        margin-right: 0 !important;
-        margin-left: 30px !important;
-
-        nav {
-          padding-top: 20px;
+      @include breakpoint-xs {
+        &-content {
+          lost-column: 12/12;
         }
 
-        * {
-          margin: 0;
+        &-nav {
+          display: none;
+        }
+      }
 
-          h4 {
-            font-size: 1rem;
-            padding-left: 20px;
+
+      @include breakpoint-sm {
+        &-content {
+          lost-column: 9/12;
+        }
+
+        &-nav {
+          display: block;
+          position: -webkit-sticky;
+          position: sticky;
+          top: 5%;
+          height: 100%;
+          lost-column: 3/12;
+          margin-right: 0 !important;
+          margin-left: 30px !important;
+
+          nav {
+            padding-top: 20px;
+          }
+
+          * {
+            margin: 0;
+
+            h4 {
+              font-size: 1rem;
+              padding-left: 20px;
+            }
           }
         }
       }
