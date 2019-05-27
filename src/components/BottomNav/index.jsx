@@ -6,7 +6,34 @@ class BottomNav extends React.Component {
   constructor(props) {
     super(props)
 
+    this.orderedSections = this.calculateOrderedSections()
     this.hiddenClass = this.hiddenClass.bind(this)
+  }
+
+  calculateOrderedSections() {
+    var orderedSections = []
+
+    this.props.chapters.forEach(chapter => {
+      orderedSections.push({
+        name: `chapter-${chapter}`,
+        title: chapter,
+        link: this.attributeName(chapter),
+      })
+      const sections = this.props.chapterMap[chapter]
+      sections.forEach(section => {
+        orderedSections.push({
+          name: `section-${section.frontmatter.title}`,
+          title: section.frontmatter.title,
+          link: this.attributeName(section.frontmatter.title),
+        })
+      })
+    })
+
+    return orderedSections
+  }
+
+  attributeName(title) {
+    return `#${title.replace(/ /gi, '-')}`
   }
 
   hiddenClass(name) {
@@ -17,39 +44,16 @@ class BottomNav extends React.Component {
   }
 
   render() {
-    const chapters = this.props.chapters
-
     return (
       <div className="bottom-nav">
-        {chapters.map(chapter => {
-          const sections = this.props.chapterMap[chapter]
-
+        {this.orderedSections.map(section => {
           return (
-            <div>
-              <div
-                className={`section ${this.hiddenClass(`chapter-${chapter}`)}`}
-              >
-                <div className="bottom-nav__back">Back</div>
-                <div className="bottom-nav__chapter-heading">
-                  <p>{chapter}</p>
-                </div>
-                <div className="bottom-nav__forward">For</div>
+            <div className={`section ${this.hiddenClass(section.name)}`}>
+              <div className="bottom-nav__back">Back</div>
+              <div className="bottom-nav__chapter-heading">
+                <p>{section.title}</p>
               </div>
-              {sections.map(section => {
-                return (
-                  <div
-                    className={`section ${this.hiddenClass(
-                      `section-${section.frontmatter.title}`
-                    )}`}
-                  >
-                    <div className="bottom-nav__back">Back</div>
-                    <div className="bottom-nav__chapter-heading">
-                      <p>{section.frontmatter.title}</p>
-                    </div>
-                    <div className="bottom-nav__forward">For</div>
-                  </div>
-                )
-              })}
+              <div className="bottom-nav__forward">For</div>
             </div>
           )
         })}
