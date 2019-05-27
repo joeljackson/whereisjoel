@@ -46,14 +46,18 @@ class BottomNav extends React.Component {
   render() {
     return (
       <div className="bottom-nav">
-        {this.orderedSections.map(section => {
+        {this.orderedSections.map((section, index) => {
           return (
             <div className={`section ${this.hiddenClass(section.name)}`}>
-              <div className="bottom-nav__back">Back</div>
+              <div className="bottom-nav__back">
+                <a href={(this.orderedSections[index - 1] || {}).link}>Back</a>
+              </div>
               <div className="bottom-nav__chapter-heading">
                 <p>{section.title}</p>
               </div>
-              <div className="bottom-nav__forward">For</div>
+              <div className="bottom-nav__forward">
+                <a href={(this.orderedSections[index + 1] || {}).link}>For</a>
+              </div>
             </div>
           )
         })}
