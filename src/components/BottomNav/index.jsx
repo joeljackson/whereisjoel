@@ -10,7 +10,10 @@ class BottomNav extends React.Component {
   }
 
   hiddenClass(name) {
-    return this.props.currentSectionName == name ? 'visible' : 'hidden'
+    return (this.props.currentSectionName ||
+      `chapter-${this.props.chapters[0]}`) == name
+      ? 'visible'
+      : 'hidden'
   }
 
   render() {
