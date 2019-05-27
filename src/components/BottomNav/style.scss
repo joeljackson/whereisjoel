@@ -1,0 +1,43 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+
+.bottom-nav {
+  @include breakpoint-xs {
+    display: block;
+  }
+
+  @include breakpoint-sm {
+    display: none;
+  }
+
+  position: sticky;
+  bottom: 0;
+
+  .section {
+    lost-flex-container: row;
+
+    &.hidden {
+      display: none;
+    }
+
+    &.visible {
+      display: flex;
+    }
+  }
+
+  &__back {
+    lost-column: 2/12;
+  }
+
+  &__chapter-heading {
+    lost-column: 8/12;
+  }
+
+  &__forward {
+    lost-column: 2/12;
+  }
+
+  background: grey;
+  border-top: 1px solid black;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Topbar from '../Topbar'
 import Chapter from '../Chapter'
 import ChapterHeader from '../ChapterHeader'
+import BottomNav from '../BottomNav'
 import { withScroll } from 'react-window-decorators'
 import SortedArray from 'sorted-array'
 import './style.scss'
@@ -18,7 +19,7 @@ class BookTemplateDetails extends React.Component {
         return elementA.position >= elementB.position ? 1 : -1
       }),
       scrollPositionY: 0,
-      boldSectionName: '',
+      currentSectionName: '',
     }
   }
 
@@ -32,7 +33,21 @@ class BookTemplateDetails extends React.Component {
     })
   }
 
-  findBoldSection() {
+  buildChapterMap(chapters, sections) {
+    var chapterMap = {}
+
+    chapters.forEach(chapter => {
+      chapterMap[chapter] = []
+    })
+
+    sections.edges.forEach(section => {
+      chapterMap[section.node.frontmatter.chapter].push(section.node)
+    })
+
+    return chapterMap
+  }
+
+  findCurrentSection() {
     var indexOfChapter = -1
     this.state.sectionPositions.array.every(element => {
       if (element.position > this.state.scrollPositionY) {
@@ -48,7 +63,7 @@ class BookTemplateDetails extends React.Component {
   componentDidMount() {
     window.addEventListener('window-scroll', event => {
       this.state.scrollPositionY = event.detail.scrollPositionY
-      this.state.boldSectionName = this.findBoldSection()
+      this.state.currentSectionName = this.findCurrentSection()
       this.setState(this.state)
     })
   }
@@ -66,6 +81,7 @@ class BookTemplateDetails extends React.Component {
     const page = this.props.data.markdownRemark
     const sections = this.props.data.allMarkdownRemark
     const chapters = page.frontmatter.chapters
+    const chapterMap = this.buildChapterMap(chapters, sections)
 
     return (
       <div className="page">
@@ -89,7 +105,7 @@ class BookTemplateDetails extends React.Component {
                           key={chapter}
                           chapter={chapter}
                           sections={this.sectionsForChapter(chapter, sections)}
-                          boldSectionName={this.state.boldSectionName}
+                          currentSectionName={this.state.currentSectionName}
                         />
                       )
                     })}
@@ -111,6 +127,11 @@ class BookTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
+        <BottomNav
+          chapters={chapters}
+          chapterMap={chapterMap}
+          currentSectionName={this.state.currentSectionName}
+        />
       </div>
     )
   }

@@ -14,7 +14,7 @@ class ChapterHeader extends React.Component {
   }
 
   boldClass(name) {
-    return this.props.boldSectionName == name ? 'Bold' : ''
+    return this.props.currentSectionName == name ? 'Bold' : ''
   }
 
   render() {
