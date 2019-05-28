@@ -51,11 +51,11 @@ class BottomNav extends React.Component {
             <div className={`section ${this.hiddenClass(section.name)}`}>
               <div className="bottom-nav__back">
                 <a href={(this.orderedSections[index - 1] || {}).link}>
-                  <img src="/images/back.svg" />
+                  <img src="/images/next.svg" />
                 </a>
               </div>
               <div className="bottom-nav__chapter-heading">
-                <p>{section.title}</p>
+                <h4>{section.title}</h4>
               </div>
               <div className="bottom-nav__forward">
                 <a href={(this.orderedSections[index + 1] || {}).link}>

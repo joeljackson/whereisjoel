@@ -28,17 +28,27 @@
 
   &__back {
     lost-column: 2/12;
+    padding-top: 10px;
+
+    img {
+      transform: rotate(180deg);
+    }
   }
 
   &__chapter-heading {
     lost-column: 8/12;
     text-align: center;
+
+    h4 {
+      margin-top: 20px;
+    }
   }
 
   &__forward {
     lost-column: 2/12;
+    padding-top: 10px;
   }
 
-  background: grey;
-  border-top: 1px solid black;
+  background: white;
+  border-top: 2px solid black;
 }
