@@ -17,14 +17,14 @@ class BottomNav extends React.Component {
       orderedSections.push({
         name: `chapter-${chapter}`,
         title: chapter,
-        link: this.attributeName(chapter),
+        link: `#chapter-${this.attributeName(chapter)}`,
       })
       const sections = this.props.chapterMap[chapter]
       sections.forEach(section => {
         orderedSections.push({
           name: `section-${section.frontmatter.title}`,
           title: section.frontmatter.title,
-          link: this.attributeName(section.frontmatter.title),
+          link: `#section-${this.attributeName(section.frontmatter.title)}`,
         })
       })
     })
@@ -33,7 +33,7 @@ class BottomNav extends React.Component {
   }
 
   attributeName(title) {
-    return `#${title.replace(/ /gi, '-')}`
+    return `${title.replace(/ /gi, '-')}`
   }
 
   hiddenClass(name) {

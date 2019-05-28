@@ -20,7 +20,7 @@ class Section extends React.Component {
   render() {
     return (
       <div key={this.props.title}>
-        <a name={this.attributeName(this.props.title)} />
+        <a name={`section-${this.attributeName(this.props.title)}`} />
 
         <h2>{this.props.title}</h2>
         <div
