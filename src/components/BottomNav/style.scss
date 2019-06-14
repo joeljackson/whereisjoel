@@ -1,0 +1,54 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+
+.bottom-nav {
+  @include breakpoint-xs {
+    display: block;
+  }
+
+  @include breakpoint-sm {
+    display: none;
+  }
+
+  position: sticky;
+  bottom: 0;
+
+  .section {
+    lost-flex-container: row;
+
+    &.hidden {
+      display: none;
+    }
+
+    &.visible {
+      display: flex;
+    }
+  }
+
+  &__back {
+    lost-column: 2/12;
+    padding-top: 10px;
+
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__chapter-heading {
+    lost-column: 8/12;
+    text-align: center;
+
+    h4 {
+      margin-top: 20px;
+    }
+  }
+
+  &__forward {
+    lost-column: 2/12;
+    padding-top: 10px;
+  }
+
+  background: white;
+  border-top: 2px solid black;
+}

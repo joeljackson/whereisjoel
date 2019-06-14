@@ -16,3 +16,12 @@ collections:
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "sections"
+    label: "Sections"
+    folder: "src/pages/sections"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "section"}
+      - {label: "Chapter", name: "chapter", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
