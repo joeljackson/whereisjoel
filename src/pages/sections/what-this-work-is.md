@@ -2,6 +2,7 @@
 title: What this work is
 layout: 'section'
 chapter: Introduction
+order: 1
 ---
 
 This is a collection of my thoughts on helping to enable effective software engineering teams. Some of it is backed by research, some is from conversations with a myriad of wonderful people I very much respect, some is from experience. If you've landed here in some way this is probably a subject that matters to you.

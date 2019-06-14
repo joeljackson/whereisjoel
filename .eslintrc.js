@@ -31,7 +31,10 @@ module.exports = {
             "error",
             "never"
         ],
-        "react/jsx-uses-react": "error",   
-        "react/jsx-uses-vars": "error" 
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+    },
+    "globals": {
+        "window": true
     }
 };

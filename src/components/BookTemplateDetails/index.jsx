@@ -61,6 +61,7 @@ class BookTemplateDetails extends React.Component {
   }
 
   componentDidMount() {
+    // eslint-disable-line
     window.addEventListener('window-scroll', event => {
       this.state.scrollPositionY = event.detail.scrollPositionY
       this.state.currentSectionName = this.findCurrentSection()
