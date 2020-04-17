@@ -1,15 +1,16 @@
 ---
 title: On Biohacking
-date: "2019-02-27T00:00:00.000Z"
+date: '2019-02-27T00:00:00.000Z'
 layout: post
 draft: false
-path: "/posts/what-is-biohacking/"
+path: '/posts/what-is-biohacking/'
 category: Health Optimization
 tags:
-  - "Health Optimization"
-  - "Biohacking"
-description: "Sounds nefarious. What is Biohacking and why should you care?"
+  - 'Health Optimization'
+  - 'Biohacking'
+description: 'Sounds nefarious. What is Biohacking and why should you care?'
 ---
+
 TLDR; Biohacking is using data to empower people to take control of their own wellness.
 
 ## Context
@@ -20,10 +21,11 @@ I recently joined [Upgrade Labs](https://upgradelabs.com) as CTO. Upgrade Labs i
 
 ## What is biohacking
 
-If what we're doing isn't what google claims, what is it?  
+If what we're doing isn't what google claims, what is it?
 
 > ## Definition: _Biohacking_
->(noun) Using self experimentation and measurable feedback to create improved wellness outcomes.
+>
+> (noun) Using self experimentation and measurable feedback to create improved wellness outcomes.
 
 What do I mean? Biohacking is a practice whereby we set a wellness intention, measure biomarkers related to our intention, create a plan to change those biomarkers follow it and measure again.
 
@@ -39,24 +41,24 @@ My intention in this case is to lower my blood pressure. I can measure my blood 
 
 So, I started by buying a blood pressure monitor. Here's one on [Amazon](https://www.amazon.com/Pressure-Monitor-Professional-Accurate-Broadcast/dp/B07PP19CYL) for 24 dollars. There's also a million suggestions online for things you can do to lower your blood pressure and I started incorporating some of them into my life. Here are a few examples.
 
-* High Intensity Interval Training
-* Eat Less Sodium
-* Take CoEnzyme Q10
-* Eat More Potassium
-* Manage Stress
-* Have less sugar
-* Eat magnesium rich foods
-* Drink small amounts of red wine
+- High Intensity Interval Training
+- Eat Less Sodium
+- Take CoEnzyme Q10
+- Eat More Potassium
+- Manage Stress
+- Have less sugar
+- Eat magnesium rich foods
+- Drink small amounts of red wine
 
 I tried a variety of these things measuring my blood pressure as I went. What did I come up with? I have a CoQ10 pill every morning and every evening. I like a drink with dinner, but most night I opt for a glass of red wine over beer, and always reseal the wine after pouring to not tempt myself with a second glass. Twice a week I do bike tabatas or sprints to Glycogen deplete my muscles. Lastly I wear a device to continuously monitor my HRV (measure of stress) and help coach me through breathing to reduce stress.
 
 ### The outcome
 
-My blood pressure on average sits around 120/75 in the morning (As long as I follow my protocol). Which is great. As 
+My blood pressure on average sits around 120/75 in the morning (As long as I follow my protocol). Which is great.
 
 ## So... Naturopathic medicine
 
-No! If at some point these things stop working to keep my blood pressure low, and there aren't obvious things that work I'll take a diuretic or a beta blocker. That's just a different protocol. 
+No! If at some point these things stop working to keep my blood pressure low, and there aren't obvious things that work I'll take a diuretic or a beta blocker. That's just a different protocol.
 
 ## So what's biohacking again
 
