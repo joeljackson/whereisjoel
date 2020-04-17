@@ -14,7 +14,7 @@ class ChapterHeader extends React.Component {
   }
 
   boldClass(name) {
-    return this.props.currentSectionName == name ? 'Bold' : ''
+    return this.props.currentSectionName === name ? 'Bold' : ''
   }
 
   render() {
@@ -23,8 +23,13 @@ class ChapterHeader extends React.Component {
 
     return (
       <nav>
-        <h3 className={this.boldClass(`chapter-${name}`)}>
-          <a href={this.attributeName(`chapter-${name}`)}>{name}</a>
+        <h3>
+          <a
+            href={this.attributeName(`chapter-${name}`)}
+            className={this.boldClass(`chapter-${name}`)}
+          >
+            {name}
+          </a>
         </h3>
         {sections.map(section => {
           return (
