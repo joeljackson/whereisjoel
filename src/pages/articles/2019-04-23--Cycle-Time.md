@@ -21,11 +21,11 @@ Cycle time is defined as the length of time between deciding to start work on so
 
 ## How do I apply cycle time?
 
-One of the strengths of cycle time is that it applies to any part of your software process. It's frequently a trait of effective software organizations that whichever portion of their workflow you look at, the cycle time is relatively short.
+One of the strengths of cycle time is that it applies to any part of your software process. It's frequently a trait of effective software organizations that whichever portion of their workflow you look at, the cycle time is relatively short. Let's take a look at some areas you'd consider applying cycle time to.
 
 ### Time to release
 
-Decreasing the time from deciding to build something to actually releasing gives your team 3 superpowers that not every team has
+Decreasing the time from deciding to build something to actually releasing gives your team 4 superpowers
 
 1. Better feedback. When your cycle time is short, it gives your team more opportunity to understand the effectiveness of features. The most important barometer of whether your software is good is whether it's being used for the thing it's intended to accomplish. Teams that have long cycle times lose valuable opportunities to get feedback on whether their software actually works.
 
@@ -37,23 +37,23 @@ Decreasing the time from deciding to build something to actually releasing gives
 
 ### Time to run tests
 
-This is an example of a cycle time measurement that's not behavioral, but rather technical. It does a good job of showing how a bad cycle time in a piece of the SDLC can affect cycle time on the whole chain though. Imagine a change a developer needs to make that might take them 45 minutes and someone in QA will need 20 minutes to test it. In an ideal world the time between the developer starting the word and it being in production should be under 2 hours. Now imagine that a spec suite takes 45 minutes to run. The developer finishes their 'work' phase and the specs start spinning. By the time they're complete teh developer has moved to a new task. They may come back to the first task in 2 hours and notice a spec is broken, no problem 5 minute fix. Context switch to another task, 2 more hours and the developer notices the tests have passed and the change can be tested. QA notices a minor change. Back to the developer who won't get to it today. The next morning they make the change, but QA can't get to it until the afternoon when the change is approved.
+This is an example of a cycle time measurement that's not behavioral, but rather technical. It does a good job of showing how a bad cycle time in a piece of the SDLC can affect cycle time on the whole chain. Imagine a change a developer needs to make that might take them 45 minutes and someone in QA will need 20 minutes to test it. In an ideal world the time between the developer starting the work and it being in production could be under 2 hours. Now imagine that a spec suite takes 45 minutes to run. The developer finishes their 'work' phase and the specs start spinning. By the time they're complete the developer has moved to a new task. They may come back to the first task in 2 hours and notice a spec is broken, no problem 5 minute fix. Context switch to another task, 2 more hours and the developer notices the tests have passed and the change can be tested. QA notices a minor change. Back to the developer who won't get to it today. The next morning they make the change, but QA can't get to it until the afternoon when the change is approved.
 
-This task that you probably estimated as a "45 minute change" has now taken 2 days, maybe will spill over into a third depending on your deploy infrastructure and has cost 3 context switches for your developer on top of being a consistent mental drag while they monitored it. If the tests could run in 5 minutes, the entire back and forth ordeal would have been complete in under 2 hours and deployed. Now that we see how a single cycle time break can cascade through a simple task, imagine multiple problems like this. That's how your 30 minute tasks are taking two weeks
+This task that you probably estimated as a "45 minute change" has now taken 2 days, maybe will spill over into a third depending on your deploy infrastructure and has cost 3 context switches for your developer on top of being a consistent mental drag while they monitor it. If the tests could run in 5 minutes, the entire back and forth ordeal would have been complete in under 2 hours and deployed. Now that we see how a single cycle time break can cascade through a simple task, imagine multiple problems like this across a team. Look closely and you might discover this is why your "30 minute" tasks are all taking 2 weeks.
 
 ### Places to consider looking for cycle time problems
 
-Time for feedback on tests. Time for feedback on QA. Time from a developer picking up a task to it being in production. Time to repair a critical bug in production. Keep looking. You'll find important cycle times all throughout the SDLC.
+Time for feedback on tests. Time for feedback on QA. Time from a developer picking up a task to it being in production. Time to repair a critical bug in production. Time from deciding your going to do something for work to start. Etc. Keep looking. You'll find important cycle times all throughout the SDLC.
 
 ## What should I do?
 
-Your cycle time directly affects your team's effectiveness. Any portion of your workflow with a long cycle time will directly hinder your team's ability to execute. The great thing about this is cycle time is a good place to start to hunt for dysfunctions. If you suspect a software team could be more effective, start to look at the cycle times on each part of their SDLC and ask yourself "could this be faster". It's not always a cycle time problem, but I'd wager more often than not you'll run into a cycle time problem somewhere in their flow.
+Your cycle time directly affects your team's effectiveness. Any portion of your workflow with a long cycle time will hinder your team's ability to execute. The great thing about this is cycle time is a good place to start to hunt for dysfunctions. If you suspect a software team could be more effective, start to look at the cycle times on each part of their SDLC and ask yourself "could this be faster". It's not always a cycle time problem, but I'd wager more often than not you'll run into a cycle time problem somewhere in their flow.
 
 A few strategies you can use to start to attack cycle time problems include
 
 ### Decouple projects
 
-It might seem like it's really important to release the new auth microservice at the same time as adding oauth to your app. Propose doing the two things separately. Maybe you estimate it will take 4 weeks to do them concurrently and 5 weeks in serial. The 5 week project plan will almost always be safer, and you will be surprised by how much more often projects actually get done in the time estimated.
+It might seem like it's really important to release the new auth microservice at the same time as adding oauth to your app. Propose doing the two things separately. Maybe you estimate it will take 4 weeks to do them concurrently and 5 weeks in serial. The 5 week project plan will almost always be safer, and you will be surprised by how much more reliably projects get done in the time estimated.
 
 ### Measure your cycle time
 

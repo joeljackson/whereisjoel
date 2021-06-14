@@ -2,7 +2,7 @@
 title: On Making Decisions
 layout: 'section'
 chapter: On Software Strategy
-order: 1
+order: 2
 ---
 
 ## The two activities of an organization
