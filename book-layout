@@ -1,31 +1,34 @@
 Notes:
 0) Introduction
-# Why is software engineering important?
+# Why is software engineering important? X
 1) On Hiring
   a) On the importance of hiring
   b) On the difficulty of hiring
-  c) On team structure
-  d) On sourcing
-  e) On interviewing
-  f) On impressing talent
-  g) On agile talent
-  h) On Onboarding
-  i) Hiring Checklist
+  c) On The Hiring Playbook
+  d) On team structure
+  e) On sourcing
+  f) On interviewing
+  g) On impressing talent
+  h) On agile talent
+  i) On Onboarding
+  j) On Holding onto talent
+  k) Hiring Checklist
 2) On day to day software engineering
-  a) On Agile Software development
+  a) On Agile Software development X
   b) On Managing your team
   c) On Managing individuals
-  d) On setting directionH
+  d) On setting direction
   e) On evaluating employees
   f) On understanding the effectiveness of your team
-  g) On managing a product backlog
-  h) On 10X developers
-  i) On physical proximity
-  j) On Self Care
-  K) Effectiveness Checklist
+  g) On managing a product backlog (North Star. Identify Business Value en route. )
+  h) On integration frequency and size
+  i) On 10X developers
+  j) On physical proximity
+  k) On Self Care
+  l) Effectiveness Checklist
 3) On Strategy
-  a) On build vs buy
-  b) On making decisions
+  a) On build vs buy X
+  b) On making decisions X
   c) On software quality (Aka Technical Debt)
   d) On cycle time
   e) On delaying decisions
@@ -43,3 +46,9 @@ Ideas for posts
 # Gatsby + Netlify
 # On the economics of early stage health startups
   
+
+Manager sets true north.
+Great communication up to create ideas. Great communication down about what.
+Manager understands individual's core values
+Frontline workers make calls
+
