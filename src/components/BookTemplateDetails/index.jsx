@@ -30,6 +30,8 @@ class BookTemplateDetails extends React.Component {
 
     return sectionNodes.filter(section => {
       return section.frontmatter.chapter === chapter
+    }).sort((e1, e2) => {
+      return e1.frontmatter.order - e2.frontmatter.order
     })
   }
 
@@ -40,7 +42,9 @@ class BookTemplateDetails extends React.Component {
       chapterMap[chapter] = []
     })
 
+    console.log(chapterMap)
     sections.edges.forEach(section => {
+      console.log(section.node.frontmatter.chapter)
       chapterMap[section.node.frontmatter.chapter].push(section.node)
     })
 
