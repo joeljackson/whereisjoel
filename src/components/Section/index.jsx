@@ -9,8 +9,10 @@ class Section extends React.Component {
   }
 
   componentDidMount() {
-    const node = ReactDOM.findDOMNode(this)
-    this.props.setSectionPosition(`section-${this.props.title}`, node.offsetTop)
+    setTimeout(() => {
+      const node = ReactDOM.findDOMNode(this)
+      this.props.setSectionPosition(`section-${this.props.title}`, node.offsetTop)
+    }, 500)
   }
 
   attributeName(title) {

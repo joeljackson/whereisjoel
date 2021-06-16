@@ -42,9 +42,7 @@ class BookTemplateDetails extends React.Component {
       chapterMap[chapter] = []
     })
 
-    console.log(chapterMap)
     sections.edges.forEach(section => {
-      console.log(section.node.frontmatter.chapter)
       chapterMap[section.node.frontmatter.chapter].push(section.node)
     })
 
@@ -60,7 +58,8 @@ class BookTemplateDetails extends React.Component {
       indexOfChapter = indexOfChapter + 1
       return true
     })
-
+    console.log(this.state.sectionPositions.array.map(e => `${e.position}-${e.name}`))
+    console.log(this.state.scrollPositionY)
     return (this.state.sectionPositions.array[indexOfChapter] || {}).name
   }
 
