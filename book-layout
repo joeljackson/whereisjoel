@@ -1,76 +1,83 @@
 Notes:
-0) Introduction
+
+0. Introduction
+
 # Why is software engineering important? X
-1) On Hiring
-  a) On the importance of hiring
-  b) On the difficulty of hiring
-  c) On The Hiring Playbook
-  d) On team structure
-  e) On sourcing
-  f) On interviewing
-  ** Ask for things, trust the first behavior/response
-  ** Find out what they like.
-  ** Find out their superpowers
-  ** First 1 on 1
-  g) On impressing talent
-  h) On setting expectations
-  i) On agile talent
-  j) On Onboarding
-  k) On Holding onto talent
-  l) Hiring Checklist
-2) On day to day software engineering
-  a) On Managing individuals
-  ** Manage to strengths
-  ** Learn their strengths and weaknesses
-  ** Learn their drivers
-  ** Help people learn what they want
-  ** Understand concerns -> Ask why
-  ** Create heros in each role <-- Keep employees in their current roles
-  ** If you're managing around their weaknesses, they're in the wrong role
-  ** Things to always know
-  *** What are their superpowers? How do we use them to enable the team
-  *** What are their weaknesses? How do we make sure those aren't problems
-  *** Who is currently annoying them? Why and is it a real problem?
-  *** What is currently annoying them? Why and is it a real problem?
-  *** What motivates them? How am I making sure that we're providing them that stimulation?
-  b) On Managing your team
-  ** Communication
-  ** Psychological safety
-  c) On Agile Software development X
-  d) On setting direction
-  ** Always communicate MORE
-  ** Set a north star
-  e) On evaluating employees
-  f) On understanding the effectiveness of your team
-  g) On managing a product backlog (North Star. Identify Business Value en route. )
-  h) On integration frequency and size
-  i) On 10X developers
-  j) On physical proximity
-  k) On Self Care
-  l) Effectiveness Checklist
-3) On Strategy
-  a) On build vs buy X
-  b) On making decisions X
-  c) On software quality (Aka Technical Debt)
-  d) On cycle time
-  e) On delaying decisions
-  f) On "sprints"
-  g) On managing “Roadmaps”
-  f) On jerks
-4) Traps
-  a) On maximizing Utilization
-  b) On support (WTF is this?)
-  c) On "agile"
-  d) On Running Cover
+
+1. On Hiring
+   a) On the importance of hiring
+   b) On the difficulty of hiring
+   c) On The Hiring Playbook
+   d) On team structure
+   e) On sourcing
+   f) On interviewing
+   ** Ask for things, trust the first behavior/response
+   ** Find out what they like.
+   ** Find out their superpowers
+   ** First 1 on 1
+   g) On impressing talent
+   h) On setting expectations
+   i) On agile talent
+   j) On Onboarding
+   k) On Holding onto talent
+   l) Hiring Checklist
+2. On day to day software engineering
+   a) On Managing individuals
+   ** Manage to strengths
+     ** Learn their strengths and weaknesses
+     ** Learn their drivers
+   ** Help people learn what they want
+   ** Understand concerns -> Ask why
+     ** Create heros in each role <-- Keep employees in their current roles
+     ** If you're managing around their weaknesses, they're in the wrong role
+   ** Things to always know
+   **_ What are their superpowers? How do we use them to enable the team
+   _** What are their weaknesses? How do we make sure those aren't problems
+   **_ Who is currently annoying them? Why and is it a real problem?
+   _** What is currently annoying them? Why and is it a real problem?
+   **\* What motivates them? How am I making sure that we're providing them that stimulation?
+   b) On Managing your team
+   ** Communication
+   ** Psychological safety
+   c) On Agile Software development X
+   d) On setting direction
+   ** Always communicate MORE
+     \*\* Set a north star
+   e) On evaluating employees
+   f) On understanding the effectiveness of your team
+   g) On managing a product backlog (North Star. Identify Business Value en route. )
+   h) On integration frequency and size
+   i) On 10X developers
+   j) On physical proximity
+   k) On Self Care
+   l) On understanding effective team sizes
+   m) Effectiveness Checklist
+3. On Strategy
+   a) On build vs buy X
+   b) On making decisions X
+   c) On software quality (Aka Technical Debt)
+   d) On cycle time
+   e) On delaying decisions
+   f) On "sprints"
+   g) On managing “Roadmaps”
+   ** ICE
+   **
+   f) On jerks
+4. Traps
+   a) On maximizing Utilization
+   b) On support (WTF is this?)
+   c) On "agile"
+   d) On Running Cover
 
 Ideas for posts
+
 # Product as guided local search
+
 # Gatsby + Netlify
+
 # On the economics of early stage health startups
-  
 
 Manager sets true north.
 Great communication up to create ideas. Great communication down about what.
 Manager understands individual's core values
 Frontline workers make calls
-
