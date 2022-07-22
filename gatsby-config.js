@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         label: 'On Building Software',
-        path: '/on-building-software'
+        path: '/on-building-software',
       },
       {
         label: 'About me',
@@ -27,7 +27,7 @@ module.exports = {
       name: 'Joel Jackson',
       email: 'jackson.joel@gmail.com',
       github: 'https://github.com/joeljackson/',
-      linkedin: 'https://www.linkedin.com/in/joel-jackson-95321212/'
+      linkedin: 'https://www.linkedin.com/in/joel-jackson-95321212/',
     },
   },
   plugins: [
@@ -104,6 +104,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
+            title: 'Where Is Joel',
           },
         ],
       },
@@ -209,7 +210,6 @@ module.exports = {
             minPixelValue: 0,
           }),
         ],
-        precision: 8,
       },
     },
     'gatsby-plugin-netlify-cms',
