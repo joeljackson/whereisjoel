@@ -2,6 +2,7 @@
   "jshint.options": {
     "esversion": 6
   },
-  "eslint.packageManager": "yarn", 
-  "editor.formatOnSave": true
+  "eslint.packageManager": "yarn",
+  "editor.formatOnSave": true,
+  "cSpell.words": ["duplicative"]
 }
