@@ -22,3 +22,11 @@ A few of the things I often look for in software engineers include
 - Good problem solver - Great at figuring out problems outside of their core skillset
 
 This list, of course, can change on a role-by-role basis. It's a worthwhile exercise compiling a list of the things you have personally found valuable in previous co-workers and determining if they fit a role you're currently hiring for. If they do, consider adding them to your candidate definition.
+
+By the time you're done with this, you should have something like the following complete. Make sure to do this before any new candidate you bring in.
+
+| Candidate Name | Reads Code (Joel) | Strong skillset in Ruby (At home assignment) | Good Problem solver (Jess) | Intrinsicly Motivated (John) | Core Drivers aligned with team (John) | Career goals make sense (Joel) |
+| -------------- | ----------------- | -------------------------------------------- | -------------------------- | ---------------------------- | ------------------------------------- | ------------------------------ |
+| Jennifer       |                   |                                              |                            |                              |
+| Jessica        |                   |                                              |                            |                              |
+| Jordan         |                   |                                              |                            |                              |

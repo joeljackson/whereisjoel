@@ -5,9 +5,7 @@ chapter: Introduction
 order: 1
 ---
 
-This is a collection of my thoughts on helping to enable effective software engineering teams. Some of it is backed by research, some is from conversations with a myriad of wonderful people I very much respect, some is from experience. If you've landed here in some way this is probably a subject that matters to you.
-
-Software Engineering plays a role in almost every modern corporation. This is demonstrated in the fact that there are [4.4 million](https://www.daxx.com/blog/development-trends/number-software-developers-world) software engineers in the United States. That's about 1 in every 30 working people in the country. I'm specifically writing this for those working in Software Engineering at companies that are "Software Enabled Companies". What do I mean by this?
+This is a collection of my thoughts on helping to enable effective software and digital product teams. Some of it is backed by research, some is from conversations with a myriad of wonderful people I very much respect, some is from experience. If you've landed here in some way this is probably a subject that matters to you. Software Engineering plays a role in almost every modern corporation. This is demonstrated in the fact that there are [4.4 million](https://www.daxx.com/blog/development-trends/number-software-developers-world) software engineers in the United States. That's about 1 in every 30 working people in the country. I'm specifically writing this for those working in Software Engineering at companies that are "Software Enabled Companies". What do I mean by this?
 
 ## What is a "Software Company"
 
