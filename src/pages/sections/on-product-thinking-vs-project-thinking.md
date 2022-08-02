@@ -43,7 +43,7 @@ In a scenario where the majority of features we're delivering are bets on delive
 
 ## When to use project thinking or product thinking
 
-At most large software companies, the answer here isn't really all that interesting. They have digital product teams that are innovating on customer products and they use product based thinking and delivery. They also have software service organization that do things like integrate ERP software and they use project based thinking and delivery. For smaller companies that are not explicitly software companies, that's a luxury that's normally impossible. These organizations have more "Kitchen Sink" style software teams where the teams must handle all different types of outcomes the organization needs to drive. In this case it becomes more important to be thoughtful about the type of delivery going on.
+At most large software companies, the answer isn't interesting. They have digital product teams that are innovating on customer products and they use product based thinking and delivery. They also have software service organization that do things like integrate ERP software and they use project based thinking and delivery. For smaller companies that are not explicitly software companies, that's a luxury that's normally impossible. These organizations have more "Kitchen Sink" style software teams where the teams must handle all different types of outcomes the organization needs to drive. In this case it becomes more important to be thoughtful about the type of delivery going on.
 
 It should be clear now that both delivery strategies aren't well suited for the same sorts of tasks, so when do you use each? Let's look at some examples.
 
