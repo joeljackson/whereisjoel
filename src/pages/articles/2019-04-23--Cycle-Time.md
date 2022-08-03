@@ -27,13 +27,13 @@ One of the strengths of cycle time is that it applies to any part of your softwa
 
 Decreasing the time from deciding to build something to actually releasing gives your team 4 superpowers
 
-1. Better feedback. When your cycle time is short, it gives your team more opportunity to understand the effectiveness of features. The most important barometer of whether your software is good is whether it's being used for the thing it's intended to accomplish. Teams that have long cycle times lose valuable opportunities to get feedback on whether their software actually works.
+1. **Better feedback.** When your cycle time is short, it gives your team more opportunity to understand the effectiveness of features. The most important barometer of whether your software is good is whether it's being used for the thing it's intended to accomplish. Teams that have long cycle times lose valuable opportunities to get feedback on whether their software actually works.
 
-2. More working software. I'm always amazed by the power of good software in organizations. Even software that's not "All the way done". The world can be very unpredictable and despite the best of intentions, product roadmaps often have to change more than we'd like. Fast cycle time guarantees software will go live. Live software, even if it's not "done", can empower organizations in surprising ways.
+2. **More working software.** I'm always amazed by the power of good software in organizations. Even software that's not "All the way done". The world can be very unpredictable and despite the best of intentions, product roadmaps often have to change more than we'd like. Fast cycle time guarantees software will go live. Live software, even if it's not "done", can empower organizations in surprising ways.
 
-3. More agility. A corollary to the last point, sometimes software turns out to be good enough long before the intended scope is complete. Knowing a feature is already delivering value gives your team the ability to take on different work than was originally anticipated if needed.
+3. **More agility.** A corollary to the last point, sometimes software turns out to be good enough long before the intended scope is complete. Knowing a feature is already delivering value gives your team the ability to take on different work than was originally anticipated if needed.
 
-4. Decreased risk. Understanding scope estimates is critical to any effective product discipline. The same initiative might be a company's top priority if it can be accomplished in a week, and not even worth doing if it were to take 4 months. Decreasing cycle time allows your team to more accurately estimate the size of projects which will in turn empower your team to do a dramatically better job of deciding what's the right thing to do.
+4. **Decreased risk.** Understanding scope estimates is critical to any effective product discipline. The same initiative might be a company's top priority if it can be accomplished in a week, and not even worth doing if it were to take 4 months. Decreasing cycle time allows your team to more accurately estimate the size of projects which will in turn empower your team to do a dramatically better job of deciding what's the right thing to do.
 
 ### Time to run tests
 

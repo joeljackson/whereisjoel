@@ -72,6 +72,20 @@ It's the process of using measurement, plan creation and re-measurement to achie
 
 What if you continuously applied this process across all of your health, not just your weight? Kept tabs all the time, not just for the 4-5 weeks you're on your weight loss plan? That's biohacking.
 
+## What does this mean in practice at labs?
+
+Upgrade Labs offers a set of advanced tactics you can use to drive your health outcomes. Originally assembled as a collection of tools you could use like a "gym" we're building infrastructure around measurement and driving biohacking outcomes. The process begins by coming in and getting a comprehensive blood test. The labs nurse practitioners and biohackers will then put together a program using the tools in labs to help tackle your goals based on what we see.
+
+For example if your cortisol levels are high and you're trying to lose weight your program might include
+
+1. Virtual float tank
+2. Brain trainer
+3. Cryotherapy
+4. A regular stress IV
+5. Less gym time
+
+We'd put you on the program for a month, then re-evaluate where you stand at the end before setting up a new protocol.
+
 ## A disclaimer on fringe elements
 
 If you dig into the biohacking community you'll find a lot of things that are pretty fringe. An example of this is the "Carnivore Diet", a diet where you eat nothing but meat. I'm not saying this won't work for you. People follow these things and keep close tabs on things like LDL, HDL etc and seem to be healthy. I would encourage everyone to do your research before launching into something like that. The long term health outcomes are totally unknown, you're doing an experiment on your own body that might end up in dying early.
