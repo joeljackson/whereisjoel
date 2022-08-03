@@ -53,7 +53,7 @@ exports.createPages = ({ graphql, actions }) => {
             path: edge.node.fields.slug,
             component: slash(bookTemplate),
             context: { slug: edge.node.fields.slug },
-          })        
+          })
         } else if (_.get(edge, 'node.frontmatter.layout') === 'post') {
           createPage({
             path: edge.node.fields.slug,
@@ -110,7 +110,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     typeof node.slug === 'undefined'
   ) {
     const fileNode = getNode(node.parent)
-    let slug = fileNode.fields.slug
+    let slug = fileNode.relativeDirectory
     if (typeof node.frontmatter.path !== 'undefined') {
       slug = node.frontmatter.path
     }

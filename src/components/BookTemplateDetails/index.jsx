@@ -30,6 +30,8 @@ class BookTemplateDetails extends React.Component {
 
     return sectionNodes.filter(section => {
       return section.frontmatter.chapter === chapter
+    }).sort((e1, e2) => {
+      return e1.frontmatter.order - e2.frontmatter.order
     })
   }
 
@@ -56,7 +58,8 @@ class BookTemplateDetails extends React.Component {
       indexOfChapter = indexOfChapter + 1
       return true
     })
-
+    console.log(this.state.sectionPositions.array.map(e => `${e.position}-${e.name}`))
+    console.log(this.state.scrollPositionY)
     return (this.state.sectionPositions.array[indexOfChapter] || {}).name
   }
 

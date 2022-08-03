@@ -1,0 +1,14 @@
+---
+title: On Sourcing
+layout: 'section'
+chapter: On Hiring
+order: 5
+---
+
+The critical observation in sourcing great candidates is that most active job seekers are not great candidates. Thinking back to the sporting example, what percentage of top-tier athletes are free agents at any given time? Most available athletes are, at best, role players unable to find a place on any roster. The implication here is simple, putting a job on a job board and waiting for applications will heavily bias your candidate base to poor candidates. Remember, good candidates are mostly fully employed. Base your sourcing strategy on two pillars: hiring promising junior candidates who will grow into tomorrow's all-stars and reaching out to employed prospects.
+
+Hiring promising juniors is the most challenging piece of a good sourcing strategy. These people will initially not be able to execute at the rate of a more senior candidate, and we ofter hire to fill immediate needs. Junior candidates help in two ways. First, as they evolve their skill set they can play various roles in an organization, so you don't need to be as confident in the job requirements. Second, they're not set in their ways. You can mold your behavior to however your organization is currently structured. Start by talking to local universities. University students who spent the last four years working in aligned disciplines will have four years of muscle memory under their belt and if you plan far enough ahead, universities are eager to place their students in good jobs. You can also look to local boot camps, but take these graduates with a grain of salt. They may be smart and have a skill set you can use but are three years behind the University grads at solving domain-aligned problems.
+
+To recruit from other companies, use a recruiter. You can not recruit with an internal team as effectively as a recruiter can recruit for you. Focus on hiring out of companies you suspect have a strong discipline in the role you're trying to hire for that have roughly similar team sizes. The goal is for your sourcing strategy to be as predictive as possible about the candidate's ability to be successful in your organization. This is not saying that having worked at Amazon means someone won't be productive in your 15 person digital product team, it's just saying it is less predictive than having been successful in another 15 person product team.
+
+Also bias towards people who have had at least one long stint at a company and had a number of title changes in that same role. It's much more impressive to advance in an organization where everyone knows your skills than it is to convince someone you don't know to give you a higher title. It's also important for employees to see their decisions play out over a period of years. This long term feedback loop will help inform their behavior in new roles, including yours in ways you don't get from shorter engagements.

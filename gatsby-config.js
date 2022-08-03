@@ -3,7 +3,7 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://www.whereisjoel.com',
+    siteUrl: 'https://www.whereisjoel.com',
     title: 'Where is Joel',
     subtitle:
       'On building software, living a healthy life and the world around us.',
@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         label: 'On Building Software',
-        path: '/on-building-software'
+        path: '/on-building-software',
       },
       {
         label: 'About me',
@@ -27,7 +27,7 @@ module.exports = {
       name: 'Joel Jackson',
       email: 'jackson.joel@gmail.com',
       github: 'https://github.com/joeljackson/',
-      linkedin: 'https://www.linkedin.com/in/joel-jackson-95321212/'
+      linkedin: 'https://www.linkedin.com/in/joel-jackson-95321212/',
     },
   },
   plugins: [
@@ -59,7 +59,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                site_url: url
+                site_url: siteUrl
                 title
                 description: subtitle
               }
@@ -104,6 +104,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
+            title: 'Where Is Joel',
           },
         ],
       },
@@ -142,36 +143,6 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-sitemap',
-      options: {
-        query: `
-            {
-              site {
-                siteMetadata {
-                  url
-                }
-              }
-              allSitePage(
-                filter: {
-                  path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
-                }
-              ) {
-                edges {
-                  node {
-                    path
-                  }
-                }
-              }
-          }`,
-        output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.url + edge.node.path,
-              changefreq: 'daily',
-              priority: 0.7,
-            }
-          }),
-      },
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
@@ -209,9 +180,8 @@ module.exports = {
             minPixelValue: 0,
           }),
         ],
-        precision: 8,
       },
     },
-    'gatsby-plugin-netlify-cms',
+    //'gatsby-plugin-netlify-cms',
   ],
 }

@@ -1,0 +1,32 @@
+---
+title: On Interviewing
+layout: 'section'
+chapter: On Hiring
+order: 6
+---
+
+This is where you determine if the candidate has the skills you're looking for and if they're a good fit. You should have gathered your interview team in the candidate definition process and defined what you're looking for in the candidate. Take a second and craft an interview plan where everyone knows what they're looking for and has some idea how they will elucidate it.
+
+Skill-based interviews are simple, do some work with them. It amazes me how many interview processes don't do this. You're looking for someone who can do something specific, get them to do that thing. I like to spend 30-60 minutes doing it live with them, then leave them with some work to do on their own. No one can fake a live skills interview. If it's a software engineer, solve a bug. If it's a designer, make a quick figma component. Most of this should be muscle memory, and it should be obvious very quickly if they have the muscle memory. I've always regretted hiring anyone who didn't perform well here. I like to follow it up with an assignment to get a work sample. Ideally make it something pertinent to your business and pay them for it. Try before you buy. These two simple things will make it abundantly clear if the candidate has the skill you're looking for. You don't need, and shouldn't ask for, any esoteric problems, they're not predictive of a candidates ability to execute on a skill.
+
+Since we're specifically talking about digital product teams, I'm going to include my #1 must do for interviewing software engineers, **ALWAYS** ensure they can read other people's code. I like to do this by finding a basic bug or really simple feature in the codebase and getting them to solve it live with me on zoom. I generally pick something that co
+
+To figure out if the candidate is a good fit and has the innate drivers you're looking for. A few tips.
+
+1. Ask open ended questions. If the candidate asks for clarification, tell them to fill it in however it feels right. Your goal is to not guide the candidate's response at all. Their unaided response is indicative of their future behavior or their core drivers. When they give you the response, believe it and move on. You can use the time after the interview to come back and decide if what you've learned makes them a fit. How will you figure out what questions to ask? A fun exercise can be asking questions of your team, and figuring out which answers seem predictive. You know your best employees, how do their answers differ from the average employees? What could you have asked these people that would have helped you understand their potential in an interview? A few questions I'll often reach for include:
+
+- "Tell me about things you do gives you the most satisfaction in a job?" - This should let you know a little bit about their drivers. Software engineers may enjoy turning a mud puddle of code into a monet with beautiful factoring for example. But sometimes you'll learn things that are a bit more non-job specific and can be really useful in understanding if this person will fit with your team. I once had a designer mention they love using design to manage stakeholder expectations. We didn't hire her for reasons unrelated to the interview, but I imagine she'd be very effective at driving healthy relationships with non-technical teams, an invaluable skill.
+- "What is something you do that you do better than everyone else?" - This is a question around a candidate's self awareness. It's It's also the thing that as a manager you have to want on the team, because to unleash this person't potential as an employee you're going to hve to spend time getting them to lean into this skill. Let's say an prospective designer tells you they're really good at keeping people organized. Do you want or need this on the team? How would it benefit everyone if someone with exceptional organizational skills joined the team?
+- "What frustrates your co-workers most about you? What kind of person complements you really well to mitigate this?" - Great employees know what bothers their co-workers about themselves. Sometimes they'll go so far as to ask. They also know how really effective coworkers on their team will help make them more complete in turn.
+- "What makes someone a really effective manager for you?" - Good employees know what they like in a manager, and it's useful to understand if you can fill that role. Everyone has different management styles, and yours may not match the drivers of a potential candidate. If that's the case, it's going to be much harder to get their best work out of them. If you are laissez-faire and the candidate values frequent direct feedback, you may both end up frustrated. Conversely if you love frequent direct feedback and the candidate likes space and guidelines to work, that candidate will be often annoyed an unlikely to product at their best.
+- "What's something you don't like doing and would prefer not doing in future roles?" - It floors me how often someone will respond by saying they don't want to do the exact thing I'm hiring this role for.
+
+2. Ask for specific examples of behaviors. Listen for quick responses with highly specific details. General answers or slow answers aren't bad, but won't help you understand how the candidate is going to behave in the future. If a candidate cares about something, and frequently exhibits a behavior it will be top of mind. I always ask how candidates handled a conflict situation in their past. I don't consider a response that's theoretical, general or slow to be a disqualifier, just unhelpful in assessing the candidates strengths. If the candidate is able to provide a specific example, ask for another one. People who exhibit consistent consistent behaviors that they value will have multiple top of mind.
+
+Examples of useful questions.
+
+- "Tell me about a time you had a disagreed with a co-worker. How did you resolve it?" - Great employees will disagree with their coworkers.
+- "What's an example of a time you went above and beyond to create a really positive outcome for the business?" -
+- "Tell me about a time you changed your opinion or made a mistake and learned from it" - Lifelong learners will have lots of these. You can push for a second or even a third and if they can offer them that's a really positive sign.
+
+3. Ask consistent questions. Over time you'll learn of their predictive power.

@@ -4,6 +4,8 @@ layout: book
 path: '/on-building-software'
 chapters:
   - Introduction
+  - On Hiring
+  - On Day To Day Software Engineering
   - On Software Strategy
 ---
 

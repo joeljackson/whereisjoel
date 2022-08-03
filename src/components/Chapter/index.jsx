@@ -10,11 +10,13 @@ class Chapter extends React.Component {
   }
 
   componentDidMount() {
-    const node = ReactDOM.findDOMNode(this)
-    this.props.setSectionPosition(
-      `chapter-${this.props.chapter}`,
-      node.offsetTop
-    )
+    setTimeout(() => {
+      const node = ReactDOM.findDOMNode(this)
+      this.props.setSectionPosition(
+        `chapter-${this.props.chapter}`,
+        node.offsetTop
+      )
+    }, 500)
   }
 
   attributeName(title) {
