@@ -15,7 +15,7 @@ This problem is exacerbated by the fact that interviewing is an unreliable proce
 
 Let's start by defining the likelihood that a hire is either destructive or creates a competitive advantage.
 
-There are 4 variables to consider
+There are 3 variables to consider.
 
 **C - The confidence that you're hiring the correct role, and that you've defined the characteristics correctly.** It's very easy to think you need a role you don't or to just not be right about the skillset needed to fill a role.
 
@@ -25,4 +25,4 @@ There are 4 variables to consider
 
 The chance of a candidate not working out is `1 - (C * (1-((1-P) * (1-I)))`.
 
-So, let's say a destructive employee is bottom 20th percentile. The likelihood of hiring a destructive candidate in an average interview process might look something like this C - 70%, P - 25% and I - 60%. That leaves us with a roughly 50% chance of hiring a destructive candidate. Yikes! Now imagine rapidly growing your team; you very quickly fill your company with bottom quartile employees.
+So, let's say a destructive employee is bottom 20th percentile. The likelihood of hiring a destructive candidate in an average interview process might look something like this C - 70%, P - 25% and I - 60%. That leaves us with a **roughly 50% chance of hiring a destructive candidate**. Yikes! Now imagine rapidly growing your team; you very quickly fill your company with bottom quartile employees.

@@ -3,7 +3,7 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://www.whereisjoel.com',
+    siteUrl: 'https://www.whereisjoel.com',
     title: 'Where is Joel',
     subtitle:
       'On building software, living a healthy life and the world around us.',
@@ -59,7 +59,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                site_url: url
+                site_url: siteUrl
                 title
                 description: subtitle
               }
@@ -143,36 +143,6 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-sitemap',
-      options: {
-        query: `
-            {
-              site {
-                siteMetadata {
-                  url
-                }
-              }
-              allSitePage(
-                filter: {
-                  path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
-                }
-              ) {
-                edges {
-                  node {
-                    path
-                  }
-                }
-              }
-          }`,
-        output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.url + edge.node.path,
-              changefreq: 'daily',
-              priority: 0.7,
-            }
-          }),
-      },
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
@@ -212,6 +182,6 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-netlify-cms',
+    //'gatsby-plugin-netlify-cms',
   ],
 }

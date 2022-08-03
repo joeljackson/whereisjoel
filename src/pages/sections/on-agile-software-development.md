@@ -5,8 +5,6 @@ chapter: On Day To Day Software Engineering
 order: 1
 ---
 
-## Agile Software Engineering
-
 If you talk to a person on any software team about how they behave they'll probably tell you they do "Agile Software Development". Almost all of them probably do sprints, have sprint planning and use an agile board, most assign points to tickets, and some probably have grooming meetings. You'll note that this hasn't made every single software team exceptional. Why? The rituals of "agile software engineering" do not in and of themselves make teams good. Agile rituals without the core essence of agile can actually make teams worse.
 
 Having said that, the core elements at the center of agile can help make your team better. I'm not going to go through a deep description of agile software engineering here. [Wikipedia](https://en.wikipedia.org/wiki/Agile_software_development#Agile_software_development_values) can do that for you. I will examine some principles that I think are important and should help set your team on the right track.
