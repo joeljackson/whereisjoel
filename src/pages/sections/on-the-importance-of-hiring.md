@@ -13,4 +13,4 @@ Hiring is often an afterthought in organizations. Bring candidates in, put them 
 
 ### TLDR;
 
-Hire smart people, who have a set of skills you need and who like exercising those skills. The single greatest screener for employees is whether they love the thing they will be working on. The revolution of creative work gives people the ability to do something they love as a job. Every piece of your digital delivery is something people already do without being paid. People love building software, love designing things and love thinking about improving digital products.
+Hire smart people, who have a set of skills you need and who like exercising those skills. The single greatest screener for employees is whether they love the thing they will be working on. The revolution of creative work gives people the ability to do something they love as a job. Every piece of your digital delivery is something people already do without being paid. People love building software, love designing things and love thinking about improving digital products. Fid people who love doing these things, and you'll be well ahead of most of your peers.

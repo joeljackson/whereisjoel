@@ -28,6 +28,7 @@ module.exports = {
       email: 'jackson.joel@gmail.com',
       github: 'https://github.com/joeljackson/',
       linkedin: 'https://www.linkedin.com/in/joel-jackson-95321212/',
+      twitter: 'joeljackson',
     },
   },
   plugins: [
