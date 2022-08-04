@@ -27,7 +27,8 @@ module.exports = {
       name: 'Joel Jackson',
       email: 'jackson.joel@gmail.com',
       github: 'https://github.com/joeljackson/',
-      linkedin: 'https://www.linkedin.com/in/joel-jackson-95321212/',
+      linkedin: 'https://www.linkedin.com/in/joel-a-jackson/',
+      twitter: 'joeljackson',
     },
   },
   plugins: [
