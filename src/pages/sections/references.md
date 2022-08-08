@@ -7,11 +7,11 @@ order: 3
 
 ## TLDR
 
-If you don't want to read this whole page, I feel you. You can scan the contents on the right and get a feel for if there is anything that applies to you or your organization. The one piece that everyone should take away is first principles of work. Sometimes we get so caught up in theories of agile development, lean management etc. we forget what we're all doing here.
+If you don't want to read this whole page, that makes sense. Scan the contents and get a feel for if there is anything that applies to you or your organization. Something everyone should take away is first principles of work. Sometimes we get so caught up in theories of agile development, lean management etc. we forget what we're all doing here.
 
 > Your goal as a manager is to find people who are smart, skilled and enjoy exercising their skills. Take those people and harness their skills in a way that they can create the most possible value for your organization.
 
-This sounds obvious of course, but sometimes we forget this is what it all comes down to. Obviously, this is easier said than done, or we would have thousands of management books describing how to accomplish this. But if all you do is keep that in mind and work tirelessly towards it, you're already well on the path of creating an effective organization that will be productive and make employees happy.
+This sounds obvious, of course, but sometimes we forget this is what it all comes down to. Obviously, this is easier said than done, or we would have thousands of management books describing how to accomplish this. But if all you do is keep that in mind and work tirelessly towards it, you're already well on the path of creating an effective organization that will be productive and make employees happy.
 
 ## References
 
